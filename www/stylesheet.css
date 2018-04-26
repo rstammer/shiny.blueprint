@@ -1,0 +1,40 @@
+.flash {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 50px;
+  width: 150%;
+  background-color: #ccc;
+  opacity: 0.4 !important;
+  margin-left: -30px;
+  padding-left: 30px;
+}
+
+nav {
+  left: -30px;
+  padding-left: 15px;
+  width: 120%;
+  background-color: #05843c !important;
+  border: 0 !important;
+}
+
+nav a {
+  color: #F5ECCE;
+}
+
+nav a:hover {
+  color: #32363d;
+}
+
+.navbar-brand {
+  color: #F5ECCE;
+}
+
+.centered {
+  text-align: center;
+}
+
+.keep-alive {
+  color: red;
+  text-align: right;
+}
