@@ -28,3 +28,8 @@ heroku buildpacks:add http://github.com/virtualstaticvoid/heroku-buildpack-r.git
 ```
 
 Afterwards `git push heroku master` is your friend!
+
+
+### How does it look like?
+
+![screenshot](https://user-images.githubusercontent.com/3685123/39448039-f7a12cf4-4cc3-11e8-9de7-93ef1f23d91c.png)
