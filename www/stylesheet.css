@@ -8,6 +8,8 @@
   opacity: 0.4 !important;
   margin-left: -30px;
   padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 nav {
@@ -32,6 +34,12 @@ nav a:hover {
 
 .centered {
   text-align: center;
+}
+
+.login {
+  width: 400px;
+  padding-top: 250px;
+  margin: 0 auto;
 }
 
 .keep-alive {

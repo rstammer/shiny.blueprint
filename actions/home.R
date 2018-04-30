@@ -1,4 +1,4 @@
-pirates_action <- function(input, output, session) {
+home_action <- function(input, output, session) {
 
   output$keepAlive <- renderText({
     req(input$count)

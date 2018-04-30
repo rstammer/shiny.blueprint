@@ -13,16 +13,21 @@ source('ui.R')
 source('global.R')
 
 server <- shinyServer(function(input, output, session) {
+  session$userData$token <- Sys.getenv("USER_TOKEN")
+  global$authenticated   <- FALSE
 
-  entered_password <- parseQueryString(isolate(session$clientData$url_search))["token"] %>% toString
-  token            <- Sys.getenv("USER_TOKEN")
-
-  if (entered_password == token) {
-    # Here you might establish a db connection
-    # global$db <- db_connection()
-    router(input, output)
-  } else {
-    output$flash <- renderText({ "Authentication failed" })
+  if (!(global$authenticated == TRUE)) {
+    insertUI(selector = "#login", ui = not_authenticated)
   }
 
+  observeEvent(input$login, {
+    if (!(global$authenticated == TRUE)) {
+      global$authenticated <- (input$login == session$userData$token)
+    }
+
+    if (global$authenticated == TRUE) {
+      removeUI(selector = "#login", immediate = TRUE)
+      router(input, output)
+    }
+  })
 })

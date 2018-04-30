@@ -43,12 +43,41 @@ menu <- (
     tags$ul(class="nav navbar-nav",
       tags$li(a(class = "item", href = "/", "Home")),
       tags$li(a(class = "item", href = "/pirates", "Pirates")),
-      tags$li(a(class = "item", href = "/monkeys", "Monkeys"))
+      tags$li(a(class = "item", href = "/monkeys", "Monkeys")),
+      tags$li(a(class = "item", href = "/logout", "Logout"))
     )
   )
 )
 
-ui <- shinyUI(fluidPage(
-  title = "Monkeys & Pirates",
-  router_ui()
-))
+not_authenticated <- (
+  fluidPage(
+    head,
+    tags$nav(class = "navbar navbar-dark navbar-fixed-top", role = "navigation",
+      tags$div(class = "navbar-header",
+        tags$span(class = "navbar-brand",
+          "M&P"
+        )
+      )
+    ),
+    tags$div(class = "flash",
+      "Restricted Access. Please login."
+    ),
+    fluidRow(
+			column(12,
+        tags$div(class = 'centered login',
+          wellPanel(
+            textInput("login", label = "Login")
+          )
+        )
+      )
+    )
+  )
+)
+
+ui <- shinyUI(
+        fluidPage(
+          title = "Monkeys & Pirates",
+          tags$div(id = 'login'),
+          router_ui()
+        )
+      )
