@@ -4,7 +4,6 @@ library(magrittr)
 library(RPostgreSQL)
 library(ggplot2)
 library(dplyr)
-library(magrittr)
 library(lubridate)
 
 source('helpers.R')
