@@ -9,14 +9,14 @@ A simple, but non-trivial example R web application based on shiny
 ### How to run app on your machine
 
 First, edit the information you find in `.Renviron.example`, i.e. choose
-a token, i.e. 12345, and store the new file as `.Renviron`, which will be git-ignored.
+a password, i.e. 12345, and store the new file as `.Renviron`, which will be git-ignored.
 
 Then, run this command:
 
 ```shell
 ./run_local.sh
 ```
-… and visit `localhost:3333/?token=12345` in your browser.
+… and visit `localhost:3333` in your browser.
 
 ### Deployment (i.e. with heroku)
 
