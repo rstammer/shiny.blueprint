@@ -2,7 +2,7 @@
 
 A simple, but non-trivial example R web application based on shiny
 
-* Different endpoints by a routing layer using a patched version of [shiny.router](https://github.com/Appsilon/shiny.router/pull/36)
+* Different endpoints by a routing layer using [shiny.router](https://github.com/Appsilon/shiny.router)
 * A database layer (In this example PostgreSQL, but you can easily switch to another system)
 * A naive authentication system
 
