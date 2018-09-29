@@ -42,9 +42,9 @@ menu <- (
     ),
     tags$ul(class="nav navbar-nav",
       tags$li(a(class = "item", href = "/", "Home")),
-      tags$li(a(class = "item", href = "/pirates", "Pirates")),
-      tags$li(a(class = "item", href = "/monkeys", "Monkeys")),
-      tags$li(a(class = "item", href = "/logout", "Logout"))
+      tags$li(a(class = "item", href = route_link("pirates"), "Pirates")),
+      tags$li(a(class = "item", href = route_link("monkeys"), "Monkeys")),
+      tags$li(a(class = "item", href = route_link("logout"), "Logout"))
     )
   )
 )
