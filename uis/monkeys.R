@@ -35,7 +35,7 @@ monkeys_ui <- shinyUI(
       ),
       column(12,
         tags$h3("Bananas per week"),
-        plotOutput("bananas")
+        withSpinner(plotOutput("bananas"))
       )
     ),
     footer

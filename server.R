@@ -5,6 +5,7 @@ library(RPostgreSQL)
 library(ggplot2)
 library(dplyr)
 library(lubridate)
+library(shinycssloaders)
 
 source('helpers.R')
 source('routes.R')

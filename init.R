@@ -18,7 +18,8 @@ additional_packages = c("shiny",
                         "dplyr",
                         "magrittr",
                         "ggplot2",
-                        "magrittr")
+                        "magrittr",
+                        "shinycssloaders")
 
 install_if_missing = function(package) {
   if (package %in% rownames(installed.packages()) == FALSE) {
