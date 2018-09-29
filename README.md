@@ -6,6 +6,16 @@ A simple, but non-trivial example R web application based on shiny
 * A database layer (In this example PostgreSQL, but you can easily switch to another system)
 * A naive authentication system
 
+[See it in action here!](shiny-blueprint-demo.herokuapp.com)
+
+### What is the purpose of this repo?
+
+I want to find good way of out how a grown shiny web application could be structured to be maintainable and extendable. So this repo is my personal "state-of-the-art-sample-app" on how I'd organize a shiny app that has multiple endpoints and a database connection. 
+
+Each HTTP endpoint has a server-side callback function that I call `action`. Each action is the data source for a rendering function, that is called a `ui` function. The router maps each request to the proper pair  `(action, ui)` that serves the response then.
+
+Do you have any suggestions or improvement thoughts? Let's talk and discuss: Feel free to open an issue or contact me [via twitter 🐦](https://www.twitter.com/funktoriell)
+
 ### How to run app on your machine
 
 First, edit the information you find in `.Renviron.example`, i.e. choose
