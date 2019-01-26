@@ -6,7 +6,7 @@ A simple, but non-trivial example R web application based on shiny
 * A database layer (In this example PostgreSQL, but you can easily switch to another system)
 * A naive authentication system
 
-[See it in action here!](shiny-blueprint-demo.herokuapp.com)
+[See it in action here!](https://shiny-blueprint-demo.herokuapp.com)
 
 ### What is the purpose of this repo?
 
